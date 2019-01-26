@@ -21,7 +21,7 @@ then
     echo -e "${COL}#${NC} Ubuntu 14.04 - [${COL}c${NC}]"
     echo
     echo "Insert your OS version from the list above"
-    read -e -r -p "For example, if you have ${COL}Ubuntu 18.04${NC} type '${COL}174${NC}' :" vname
+    read -r -p "For example, if you have Ubuntu 18.04 type 'a': " vname
     echo
     
     if [[ $vname =~ ^([aA])$ ]]
@@ -56,7 +56,7 @@ then
     echo -e "${COL}#${NC} Debian 8 and below - [${COL}b${NC}]"
     echo
     echo "Insert your OS version from the list above"
-    read -e -r -p "For example, if you have ${COL}Debian 9${NC} type '${COL}9${NC}':" vname
+    read -r -p "For example, if you have Debian 9 type '9': " vname
     echo
     
     if [[ $vname =~ ^([aA])$ ]]
