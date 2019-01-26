@@ -10,6 +10,7 @@ echo -e "${COL}# Debian${NC}"
 echo -e "${COL}# Fedora${NC}"
 echo -e "${COL}# CentOS${NC}"
 echo
+osname=0
 read -r -p "Insert the name of your OS from the list above:" osname
 
 if [[ $osname =~ ^([uU][bB][uU][nN][tT][uU])$ ]]
