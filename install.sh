@@ -56,7 +56,7 @@ then
     echo -e "${COL}#${NC} Debian 8 and below - [${COL}b${NC}]"
     echo
     echo "Insert your OS version from the list above"
-    read -r -p "For example, if you have Debian 9 type '9': " vname
+    read -r -p "For example, if you have Debian 9 type 'a': " vname
     echo
     
     if [[ $vname =~ ^([aA])$ ]]
@@ -110,5 +110,6 @@ echo
 echo -e "To connect to Windscribe VPN use ${COL}windscribe connect${NC} command."
 echo
 echo -e "To get help use ${COL}windscribe --help${NC} command."
+echo
 
 exit 0
