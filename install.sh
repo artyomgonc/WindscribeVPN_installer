@@ -113,3 +113,4 @@ echo -e "To get help use ${COL}windscribe --help${NC} command."
 echo
 
 exit 0
+exec bash
