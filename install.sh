@@ -11,17 +11,17 @@ echo -e "${COL}# Fedora${NC}"
 echo -e "${COL}# CentOS${NC}"
 echo
 osname=0
-read -r -p "Insert the name of your OS from the list above:" osname
+read -r -p "Insert the name of your OS from the list above: " osname
 
 if [[ $osname =~ ^([uU][bB][uU][nN][tT][uU])$ ]]
 then
     echo
-    echo "${COL}#${NC} Ubuntu 17.04 and above - [${COL}a${NC}]"
-    echo "${COL}#${NC} Ubuntu 16.04 - [${COL}b${NC}]"
-    echo "${COL}#${NC} Ubuntu 14.04 - [${COL}c${NC}]"
+    echo -e "${COL}#${NC} Ubuntu 17.04 and above - [${COL}a${NC}]"
+    echo -e "${COL}#${NC} Ubuntu 16.04 - [${COL}b${NC}]"
+    echo -e "${COL}#${NC} Ubuntu 14.04 - [${COL}c${NC}]"
     echo
     echo "Insert your OS version from the list above"
-    read -r -p "For example, if you have ${COL}Ubuntu 18.04${NC} type '${COL}174${NC}':" vname
+    read -e -r -p "For example, if you have ${COL}Ubuntu 18.04${NC} type '${COL}174${NC}' :" vname
     echo
     
     if [[ $vname =~ ^([aA])$ ]]
@@ -52,11 +52,11 @@ fi
 if [[ $osname =~ ^([dD][eE][bB][iI][aA][nN])$ ]]
 then
     echo
-    echo "${COL}#${NC} Debian 9 and above - [${COL}a${NC}]"
-    echo "${COL}#${NC} Debian 8 and below - [${COL}b${NC}]"
+    echo -e "${COL}#${NC} Debian 9 and above - [${COL}a${NC}]"
+    echo -e "${COL}#${NC} Debian 8 and below - [${COL}b${NC}]"
     echo
     echo "Insert your OS version from the list above"
-    read -r -p "For example, if you have ${COL}Debian 9${NC} type '${COL}9${NC}':" vname
+    read -e -r -p "For example, if you have ${COL}Debian 9${NC} type '${COL}9${NC}':" vname
     echo
     
     if [[ $vname =~ ^([aA])$ ]]
@@ -81,7 +81,7 @@ fi
 if [[ $osname =~ ^([fF][eE][dD][oO][rR][aA])$ ]]
 then
     echo
-    echo "${COL}Installation will be successful only with Fedora version 22 and above${NC}"
+    echo -e "${COL}Installation will be successful only with Fedora version 22 and above${NC}"
     echo
     
     sudo wget https://repo.windscribe.com/fedora/windscribe.repo -O /etc/yum.repos.d/windscribe.repo
@@ -92,7 +92,7 @@ fi
 if [[ $osname =~ ^([cC][eE][nN][tT][oO][sS])$ ]]
 then
     echo
-    echo "${COL}Installation will be successful only with CentOS version 6 and above${NC}"
+    echo -e "${COL}Installation will be successful only with CentOS version 6 and above${NC}"
     echo
     
     sudo wget https://repo.windscribe.com/centos/windscribe.repo -O /etc/yum.repos.d/windscribe.repo
