@@ -10,20 +10,20 @@ echo -e "${COL}# Debian${NC}"
 echo -e "${COL}# Fedora${NC}"
 echo -e "${COL}# CentOS${NC}"
 echo
-read -r -p "Insert the name of your OS from the list above (without '#'):" osname
+read -r -p "Insert the name of your OS from the list above:" osname
 
 if [[ $osname =~ ^([uU][bB][uU][nN][tT][uU])$ ]]
 then
     echo
-    echo "${COL}#${NC} Ubuntu 17.04 and above - [${COL}174${NC}]"
-    echo "${COL}#${NC} Ubuntu 16.04 - [${COL}16${NC}]"
-    echo "${COL}#${NC} Ubuntu 14.04 - [${COL}14${NC}]"
+    echo "${COL}#${NC} Ubuntu 17.04 and above - [${COL}a${NC}]"
+    echo "${COL}#${NC} Ubuntu 16.04 - [${COL}b${NC}]"
+    echo "${COL}#${NC} Ubuntu 14.04 - [${COL}c${NC}]"
     echo
     echo "Insert your OS version from the list above"
     read -r -p "For example, if you have ${COL}Ubuntu 18.04${NC} type '${COL}174${NC}':" vname
     echo
     
-    if [[ $vname =~ ^([1][7][4])$ ]]
+    if [[ $vname =~ ^([aA])$ ]]
     then
         sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
         echo 'deb https://repo.windscribe.com/ubuntu zesty main' | sudo tee /etc/apt/sources.list.d/windscribe-repo.list
@@ -31,7 +31,7 @@ then
         sudo apt-get install windscribe-cli
     fi  
     
-    if [[ $vname =~ ^([1][6])$ ]]
+    if [[ $vname =~ ^([bB])$ ]]
     then
         sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
         echo 'deb https://repo.windscribe.com/ubuntu xenial main' | sudo tee /etc/apt/sources.list.d/windscribe-repo.list
@@ -39,7 +39,7 @@ then
         sudo apt-get install windscribe-cli
     fi
     
-    if [[ $vname =~ ^([1][4])$ ]]
+    if [[ $vname =~ ^([cC])$ ]]
     then
         sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
         echo 'deb https://repo.windscribe.com/ubuntu trusty main' | sudo tee /etc/apt/sources.list.d/windscribe-repo.list
@@ -51,14 +51,14 @@ fi
 if [[ $osname =~ ^([dD][eE][bB][iI][aA][nN])$ ]]
 then
     echo
-    echo "${COL}#${NC} Debian 9 and above - [${COL}9${NC}]"
-    echo "${COL}#${NC} Debian 8 and below - [${COL}8${NC}]"
+    echo "${COL}#${NC} Debian 9 and above - [${COL}a${NC}]"
+    echo "${COL}#${NC} Debian 8 and below - [${COL}b${NC}]"
     echo
     echo "Insert your OS version from the list above"
     read -r -p "For example, if you have ${COL}Debian 9${NC} type '${COL}9${NC}':" vname
     echo
     
-    if [[ $vname =~ ^([9])$ ]]
+    if [[ $vname =~ ^([aA])$ ]]
     then
         sudo apt-get install dirmngr apt-transport-https
         sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
@@ -67,7 +67,7 @@ then
         sudo apt-get install windscribe-cli
     fi
     
-    if [[ $vname =~ ^([8])$ ]]
+    if [[ $vname =~ ^([bB])$ ]]
     then
         sudo apt-get install dirmngr apt-transport-https
         sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
