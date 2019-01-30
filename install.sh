@@ -146,4 +146,4 @@ echo -e "For more commands use ${COL}windscribe --help${NC} command."
 echo
 
 exit 0
-exec bas
+exec bash
