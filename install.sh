@@ -135,7 +135,7 @@ else
 fi
 
 echo
-echo -e "${COL}Windscribe successfully installed. If you don't have Windscribe account go to ${NC}https://windscribe.com/signup${COL} and create it.${NC}"
+echo -e "Windscribe successfully installed. If you don't have Windscribe account go to ${COL}https://windscribe.com/signup${NC} and create it."
 echo
 echo
 echo -e "To login to Windscribe VPN use ${COL}windscribe login${NC} command."
@@ -146,4 +146,4 @@ echo -e "For more commands use ${COL}windscribe --help${NC} command."
 echo
 
 exit 0
-exec bash
+exec bas
