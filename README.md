@@ -15,7 +15,7 @@ sudo bash install.sh
 Alternative:
 
 ```sh
-curl -L https://bit.ly/2Hvo3WA | sudo bash -s
+curl -L https://bit.ly/2RWQ0LL | sudo bash -s
 ```
 
 Now, your VPN is ready to use!
