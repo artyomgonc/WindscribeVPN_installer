@@ -16,10 +16,10 @@ elif [ -f /etc/lsb-release ]; then
 else
     sudo echo -e "${COL}Choosing of your Linux distro${NC}"
     echo
-    echo -e "${COL}# Ubuntu${NC}"
-    echo -e "${COL}# Debian${NC}"
-    echo -e "${COL}# Fedora${NC}"
-    echo -e "${COL}# CentOS${NC}"
+    echo -e "${COL}#${NC} Ubuntu"
+    echo -e "${COL}#${NC} Debian"
+    echo -e "${COL}#${NC} Fedora"
+    echo -e "${COL}#${NC} CentOS"
     echo
     read -r -p "Insert the name of your OS from the list above: " osname
 fi
